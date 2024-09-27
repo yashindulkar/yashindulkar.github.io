@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Monument Regular';
+    src: url(./monument.otf);
+  }
+
+body {
+    font-family: 'Lexend', sans-serif;
+    text-underline-offset: 0.5em;
+    background-color: black;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: red;
+}
+
+::selection {
+    color: white;
+    background: red;
+}
+
+.container {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar {
+    display: none
+}
+
+.box {
+    background:
+        linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+        linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+        linear-gradient(0deg, #333 50%, transparent 0) repeat-y,
+        linear-gradient(0deg, #333 50%, transparent 0) repeat-y;
+    background-size: 10px 2px, 10px 2px, 2px 10px, 2px 10px;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    animation: linearGradientMove .3s infinite linear;
+}
+
+@keyframes linearGradientMove {
+    100% {
+        background-position: 10px 0, -10px 100%, 0 -10px, 100% 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-shadow: 5px 5px 10px red;
+    color: white;
+}
+
+h1 {
+    font-family: 'Monument Regular', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-family: 'Monument Regular', sans-serif;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+td {
+    white-space: nowrap;
+    padding-right: 1em !important;
+}
+
+.social {
+    font-size: 3em;
+}
+
+.scroll {
+    color: black;
+}
+
+.skills {
+    line-height: 2em;
+}
+
+.end-section {
+    border-left: 2px solid rgba(255, 255, 255, 0.4);
+    padding-left: 3em;
+}
+
+.bi {
+    font-size: 3em;
+}
+
+@media screen and (max-width: 1000px) {
+
+    h1 {
+        font-size: 1em;
+    }
+
+    .glitch {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .box {
+        padding: 0 !important;
+    }
+
+    .social {
+        font-size: 2em;
+    }
+
+    .end-section {
+        border-left: none;
+        padding-left: 1em;
+        margin-top: 3em;
+    }
+
+    .scroll {
+        color: white;
+    }
+
+    .bi {
+        font-size: 2em;
+    }
+
+}
+
+.glitch {
+    position: relative;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.glitch:before {
+    animation: glitch-color 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: blue;
+    z-index: -1;
+}
+
+.glitch:after {
+    animation: glitch-color 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: red;
+    z-index: -2;
+}
+
+@keyframes glitch-color {
+    0% {
+        transform: translate(0);
+    }
+
+    30% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    70% {
+        transform: translate(2px, -2px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
