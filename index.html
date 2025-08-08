@@ -1,377 +1,1473 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="The official website of Yash Indulkar"
-    />
-    <meta
-      name="keywords"
-      content="Yash Indulkar https://yashindulkar.github.io yashindulkar"
-    />
-    <meta
-      name="author"
-      content="Yash Indulkar https://github.com/yashindulkar"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Indulkar - Digital Architect</title>
+    <meta name="description" content="MS Data Science graduate from TUHH, Hamburg. AI researcher with 8+ published papers and extensive industry experience at ICICI Prudential.">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #ff0040;
+            --secondary: #00ff88;
+            --accent: #ff6600;
+            --cyber-blue: #00d4ff;
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --bg-card: rgba(20, 20, 20, 0.9);
+            --text-primary: #ffffff;
+            --text-secondary: #888888;
+            --border: rgba(255, 0, 64, 0.3);
+            --shadow-primary: 0 0 30px rgba(255, 0, 64, 0.5);
+            --shadow-secondary: 0 0 30px rgba(0, 255, 136, 0.3);
+        }
 
-    <title>Yash Indulkar - Official Website</title>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+            height: auto;
+            overflow-y: auto;
+        }
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="icon" type="x-icon" href="./test.png">
+        /* Ensure proper scrolling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
+        /* Remove any height restrictions */
+        html, body {
+            height: auto !important;
+            min-height: 100vh;
+        }
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-Z3FHJVEM5G"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            overflow-y: auto;
+            line-height: 1.6;
+            height: auto;
+            min-height: 100vh;
+        }
 
-      gtag("config", "G-H4S94FLYDG");
-    </script>
-  </head>
+        /* Matrix Rain Background */
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            opacity: 0.05;
+        }
 
-  <body>
-    <br />
-    <div class="container">
-      <br />
-      <br />
-      <div
-        class="container animate__animated animate__fadeIn animate__delay-0.5s"
-      >
-        <div class="box first-box p-5">
-          <div class="text-white p-4">
-            <h1 class="animate__animated animate__backInDown">
-              <b class="glitch" data-glitch="Yash Indulkar">Yash Indulkar</b>
-            </h1>
-            <br />
-            <br />
-            <div class="animate__animated animate__backInUp">
-              <h5>MS in Data Science - TUHH, Hamburg Germany</h5>
-              <br />
-              <h5>Ex - ICICI Prudential Life Insurance Company</h5>
-              <br />
-              <h5>AI and Startup Enthusiast</h5>
-              <br />
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div
-        class="container animate__animated animate__fadeIn animate__delay-1s"
-      >
-        <div class="box p-5">
-          <div class="text-white p-4">
-            <h2>Some of the things I know</h2>
-            <br />
-            <br />
-            <div class="row">
-              <div class="col-6 col-md-2">
-                <u>Frontend</u>
-                <br />
-                <br />
-                <span class="skills"
-                  >JavaScript <br />
-                  React <br />
-                  TypeScript <br />
-                  Angular</span
-                >
-                <br />
-                <br />
-              </div>
-              <div class="col-6 col-md-2">
-                <u>Backend</u>
-                <br />
-                <br />
-                <span class="skills"
-                  >Python <br />
-                  Go <br />
-                  Java <br />
-                  C++ <br />
-                  Swift</span
-                >
-                <br />
-                <br />
-              </div>
-              <div class="col-6 col-md-2">
-                <u>Frameworks</u>
-                <br />
-                <br />
-                <span class="skills"
-                  >iOS <br />
-                  Node <br />
-                  Flask <br />
-                  Django <br />
-                  Spring Boot</span
-                >
-                <br />
-                <br />
-              </div>
-              <div class="col-6 col-md-2">
-                <u>Storage</u>
-                <br />
-                <br />
-                <span class="skills"
-                  >PostgreSQL <br />
-                  MongoDB <br />
-                  Redis</span
-                >
-                <br />
-                <br />
-              </div>
-              <div class="col-6 col-md-2">
-                <u>Cloud</u>
-                <br />
-                <br />
-                <span class="skills"
-                  >AWS <br />
-                  Kafka <br />
-                  Docker <br />
-                  K8S</span
-                >
-                <br />
-                <br />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div
-        class="container animate__animated animate__fadeIn animate__delay-2s"
-      >
-        <div class="box p-5">
-          <div class="text-white p-4">
-            <h2>My work experience so far</h2>
-            <p
-              class="scroll pt-2 text-end animate__animated animate__shakeX animate__slower animate__infinite"
-            >
-              swipe &rarr;
-            </p>
-            <div class="table-responsive">
-              <table class="table table-borderless text-white">
-                <thead>
-                  <tr>
-                    <td scope="col"><u>Company</u></td>
-                    <td scope="col"><u>Role</u></td>
-                    <td scope="col"><u>Date</u></td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>ICICI Prudential Life Insurance Company Limited</td>
-                    <td>Manager I</td>
-                    <td>April 2023 - September 2024</td>
-                  </tr>
-                  <tr>
-                    <td>ICICI Prudential Life Insurance Company Limited</td>
-                    <td>Senior Associate</td>
-                    <td>April 2022 - April 2023</td>
-                  </tr>
-                  <tr>
-                    <td>ICICI Prudential Life Insurance Company Limited</td>
-                    <td>Associate</td>
-                    <td>October 2020 - April 2022</td>
-                  </tr>
-                  <tr>
-                    <td>SDF Chains</td>
-                    <td>Data Entry Specialist</td>
-                    <td>September 2018 - May 2020</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <br />
-        </div>
-        <br />
-        <div
-          class="box p-5 animate__animated animate__fadeIn animate__delay-2s"
-        >
-          <div class="text-white p-4">
-            <h2>A few of my published research papers</h2>
-            <br />
-            <br />
-            <ul>
-              <li>
-                Comparative Study of Machine Learning Algorithms for Twitter Sentiment Analysis - 2021
-              </li>
-              <br />
-              <li>
-                Time Series Analysis of Cryptocurrencies Using Deep Learning & Fbprophet - 2021
-              </li>
-              <br />
-              <li>
-                Alleviation of COVID by means of Social Distancing & Face Mask Detection Using YOLO V4 - 2021
-              </li>
-              <br />
-              <li>
-                Sentiment Analysis of Uber & Ola using Deep Learning - 2020
-              </li>
-              <br />
-              <li>
-                PUBG Winner Ranking Prediction using R Interface ‘h2o’ Scalable Machine Learning Platform - 2021
-              </li>
-              <br />
-              <li>
-                Comparative Study for Neural Image Caption Generation Using Different Transfer Learning Along with Diverse Beam Search & Bi-Directional RNN - 2021
-              </li>
-              <br />
-              <li>
-                Effects of Uber and Ola on SVM and Naïve Bayes - 2021
-              </li>
-              <br />
-              <li>
-                Twitter Sentimental Analysis & Algorithm Comparison for Uber & Ola Using ‘R’ - 2020
-              </li>
-              <br />
-              <li>
-                and for more details please visit me at my
-                <a href="https://scholar.google.com/citations?user=Ww_dRHQAAAAJ&hl=en" target="_blank">
-                  <u>Google Scholar</u>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <br />
-        <div
-          class="box p-5 animate__animated animate__fadeIn animate__delay-2s"
-        >
-          <div class="text-white p-4">
-            <h2>A few of my in manuscript research papers</h2>
-            <br />
-            <br />
-            <ul>
-              <li>
-                Image Generation and Conversion to Super Resolution using Deep Convolutional GAN and
-                Super Resolution GAN - 2025
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div
-        class="container animate__animated animate__fadeIn animate__delay-2s"
-      >
-        <div class="box p-5">
-          <div class="text-white p-4">
-            <div class="row">
-              <div class="col-lg-7">
-                <h2 class="pb-0 pb-lg-5">My online presence</h2>
-                <br />
-                <h5>
-                  Read my blog &nbsp;
-                  <u
-                    ><a href="https://medium.com/@yashindulkar" target="_blank"
-                      >medium.yashindulkar</a
-                    ></u
-                  >
-                </h5>
-                <br />
-                <br />
-                <h5>I'm everywhere on the internet</h5>
-                <br />
-                <div class="row">
-                  <div class="col-3">
-                    <a href="https://github.com/yashindulkar" target="_blank">
-                      <i class="bi bi-github"></i>
-                    </a>
-                  </div>
-                  <div class="col-3">
-                    <a
-                      href="https://instagram.com/yashindulkar"
-                      target="_blank"
-                    >
-                      <i class="bi bi-instagram"></i>
-                    </a>
-                  </div>
-                  <div class="col-3">
-                    <a href="https://twitter.com/yashindulkar" target="_blank">
-                      <i class="bi bi-twitter-x"></i>
-                    </a>
-                  </div>
-                  <div class="col-3">
-                    <a
-                      href="https://linkedin.com/in/yashindulkar"
-                      target="_blank"
-                    >
-                      <i class="bi bi-linkedin"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-5 end-section">
-                <br />
-                Drop me an email at
-                <br />
-                <a href="mailto:yashindulkar31@gmail.com" target="_blank">
-                  yashindulkar31@gmail.com
-                </a>
-                <br />
-                <br />
-                <hr />
-                <br />
-                <br />
-                This website is designed, developed, deployed and maintained by
-                <a href="https://twitter.com/yashindulkar" target="_blank"
-                  >Yash Indulkar</a
-                >.
-                <br />
-                <br />
-                Copyright
-                <script>
-                  document.write(/\d{4}/.exec(Date())[0]);
-                </script>
-                All rights reserved.
-                <br />
-                <br />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <br />
-      <br />
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            background: 
+                radial-gradient(circle at 10% 20%, var(--primary) 0%, transparent 20%),
+                radial-gradient(circle at 80% 80%, var(--secondary) 0%, transparent 20%),
+                radial-gradient(circle at 40% 40%, var(--cyber-blue) 0%, transparent 20%);
+            animation: pulse-bg 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse-bg {
+            0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.1; }
+            50% { transform: scale(1.1) rotate(180deg); opacity: 0.2; }
+        }
+
+        /* Glitch Effects */
+        .glitch {
+            position: relative;
+            font-family: 'Orbitron', monospace;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-primary);
+            text-shadow: 
+                0 0 10px var(--primary),
+                0 0 20px var(--primary),
+                0 0 40px var(--primary);
+        }
+
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glitch::before {
+            animation: glitch-1 2s infinite;
+            color: var(--primary);
+            z-index: -1;
+        }
+
+        .glitch::after {
+            animation: glitch-2 2s infinite;
+            color: var(--secondary);
+            z-index: -2;
+        }
+
+        @keyframes glitch-1 {
+            0%, 14%, 15%, 49%, 50%, 99%, 100% { transform: translate(0); }
+            15%, 49% { transform: translate(-2px, 2px); }
+        }
+
+        @keyframes glitch-2 {
+            0%, 20%, 21%, 62%, 63%, 99%, 100% { transform: translate(0); }
+            21%, 62% { transform: translate(2px, -2px); }
+        }
+
+        /* Scan Lines */
+        .scanlines {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scanlines::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                transparent 50%, 
+                rgba(255, 0, 64, 0.03) 50%
+            );
+            background-size: 100% 4px;
+            animation: scan 0.1s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes scan {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(4px); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(20px);
+            border: 2px solid var(--border);
+            padding: 10px;
+            box-shadow: var(--shadow-primary);
+            transition: all 0.3s ease;
+            opacity: 0.8;
+        }
+
+        nav:hover {
+            background: rgba(10, 10, 10, 0.95);
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        nav.scrolled {
+            background: rgba(10, 10, 10, 0.3);
+            opacity: 0.4;
+            transform: translateX(20px);
+        }
+
+        nav.scrolled:hover {
+            background: rgba(10, 10, 10, 0.95);
+            opacity: 1;
+            transform: translateX(0) scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 8px 16px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            position: relative;
+            overflow: hidden;
+            opacity: 0.7;
+        }
+
+        nav:hover .nav-links a {
+            opacity: 1;
+        }
+
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .nav-links a:hover::before,
+        .nav-links a.active::before {
+            left: 100%;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+            border-color: var(--primary);
+            text-shadow: 0 0 10px var(--primary);
+            box-shadow: inset 0 0 20px rgba(255, 0, 64, 0.1);
+            opacity: 1;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: 
+                linear-gradient(45deg, transparent 30%, rgba(255, 0, 64, 0.05) 50%, transparent 70%),
+                linear-gradient(-45deg, transparent 30%, rgba(0, 255, 136, 0.05) 50%, transparent 70%);
+            padding: 100px 0;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(0deg, transparent 24%, rgba(255, 0, 64, 0.05) 25%, rgba(255, 0, 64, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 0, 64, 0.05) 75%, rgba(255, 0, 64, 0.05) 76%, transparent 77%, transparent),
+                linear-gradient(90deg, transparent 24%, rgba(0, 255, 136, 0.05) 25%, rgba(0, 255, 136, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 255, 136, 0.05) 75%, rgba(0, 255, 136, 0.05) 76%, transparent 77%, transparent);
+            background-size: 50px 50px;
+            animation: grid-move 4s linear infinite;
+        }
+
+        @keyframes grid-move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 80px;
+            align-items: flex-start;
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(3rem, 8vw, 7rem);
+            font-weight: 900;
+            line-height: 0.9;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-text .subtitle {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            text-shadow: 0 0 20px var(--secondary);
+        }
+
+        .hero-text .tagline {
+            font-size: 1.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            background: transparent;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-family: 'Share Tech Mono', monospace;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 2px solid var(--primary);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--primary);
+            color: var(--bg-primary);
+            box-shadow: var(--shadow-primary);
+            text-shadow: none;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            border-color: var(--secondary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--secondary);
+            box-shadow: var(--shadow-secondary);
+        }
+
+        /* Hero Terminal */
+        .hero-terminal {
+            background: rgba(0, 0, 0, 0.9);
+            border: 2px solid var(--border);
+            font-family: 'Share Tech Mono', monospace;
+            height: 400px;
+            position: relative;
+            box-shadow: var(--shadow-primary);
+            margin-top: 100px;
+            margin-right: 50px;
+        }
+
+        .terminal-header {
+            background: var(--bg-secondary);
+            padding: 10px 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .terminal-dots {
+            display: flex;
+            gap: 8px;
+        }
+
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .dot-red { background: #ff5f56; }
+        .dot-yellow { background: #ffbd2e; }
+        .dot-green { background: #27ca3f; }
+
+        .terminal-title {
+            color: var(--text-secondary);
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .terminal-body {
+            padding: 20px;
+            height: calc(100% - 50px);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .terminal-line {
+            color: var(--secondary);
+            margin-bottom: 5px;
+            opacity: 0;
+            animation: type-in 0.5s ease forwards;
+        }
+
+        .terminal-line:nth-child(1) { animation-delay: 0.5s; }
+        .terminal-line:nth-child(2) { animation-delay: 1s; }
+        .terminal-line:nth-child(3) { animation-delay: 1.5s; }
+        .terminal-line:nth-child(4) { animation-delay: 2s; }
+        .terminal-line:nth-child(5) { animation-delay: 2.5s; }
+
+        @keyframes type-in {
+            to { opacity: 1; }
+        }
+
+        .cursor-blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 120px 0;
+            position: relative;
+            width: 100%;
+            overflow: visible;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .section-header h2 {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 80px;
+            padding-bottom: 50px;
+        }
+
+        .skill-category {
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(20px);
+        }
+
+        .skill-category::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary), var(--cyber-blue), var(--accent));
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+            animation: border-spin 3s linear infinite;
+        }
+
+        @keyframes border-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .skill-category:hover::before {
+            opacity: 1;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(255, 0, 64, 0.3);
+        }
+
+        .skill-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2rem;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .skill-category h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .skill-list {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+
+        .skill-list li {
+            padding: 8px 0;
+            position: relative;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .skill-list li::before {
+            content: '▶';
+            color: var(--primary);
+            margin-right: 10px;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            margin-top: 80px;
+            padding-bottom: 50px;
+        }
+
+        .contact-info h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 20px;
+            border: 2px solid transparent;
+            backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-method::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .contact-method:hover::before {
+            left: 100%;
+        }
+
+        .contact-method:hover {
+            color: var(--text-primary);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-primary);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            font-size: 1.2rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .social-link {
+            width: 60px;
+            height: 60px;
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.4rem;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary);
+            transform: scale(0);
+            transition: transform 0.3s ease;
+            z-index: -1;
+        }
+
+        .social-link:hover::before {
+            transform: scale(1);
+        }
+
+        .social-link:hover {
+            color: white;
+            border-color: var(--primary);
+            box-shadow: var(--shadow-primary);
+            z-index: 1;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-bottom: 50px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary), var(--cyber-blue));
+            transform: translateX(-50%);
+            box-shadow: 0 0 20px var(--primary);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 60px 0;
+            width: calc(50% - 40px);
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: calc(50% + 40px);
+            text-align: left;
+        }
+
+        .timeline-content {
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            padding: 30px;
+            position: relative;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(20px);
+            clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+        }
+
+        .timeline-content:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-primary);
+            transform: scale(1.05);
+        }
+
+        .timeline-date {
+            color: var(--primary);
+            font-family: 'Share Tech Mono', monospace;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .timeline-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 15px 0 10px;
+            text-transform: uppercase;
+            color: var(--secondary);
+        }
+
+        .timeline-company {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            border: 4px solid var(--bg-primary);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            box-shadow: 0 0 20px var(--primary);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-dot {
+            right: -50px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -50px;
+        }
+
+        /* Research Section */
+        .research-grid {
+            display: grid;
+            gap: 40px;
+            margin-top: 80px;
+            padding-bottom: 50px;
+        }
+
+        .research-paper {
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            padding: 40px;
+            position: relative;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(20px);
+            clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+        }
+
+        .research-paper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .research-paper:hover::before {
+            transform: scaleX(1);
+        }
+
+        .research-paper:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-primary);
+            transform: translateX(10px);
+        }
+
+        .research-paper h3 {
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+        }
+
+        .research-year {
+            color: var(--primary);
+            font-family: 'Share Tech Mono', monospace;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .research-status {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: var(--bg-primary);
+            padding: 6px 15px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
+        }
+
+        .manuscript {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 2px solid var(--border);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-secondary);
+            font-family: 'Share Tech Mono', monospace;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--cyber-blue), var(--accent));
+            animation: border-flow 3s linear infinite;
+        }
+
+        @keyframes border-flow {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin: 20px;
+                width: calc(100% - 40px);
+            }
+
+            .nav-links {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            .hero-terminal {
+                margin-top: 30px;
+                margin-right: 0;
+                height: 350px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                width: calc(100% - 80px);
+                left: 60px !important;
+                text-align: left !important;
+            }
+
+            .timeline-item .timeline-dot {
+                left: -40px !important;
+            }
+
+            section {
+                padding: 80px 0;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="scanlines">
+    <!-- Matrix Background -->
+    <div class="matrix-bg">
+        <canvas id="matrix"></canvas>
     </div>
-    <br />
-    <br />
-  </body>
+
+    <!-- Animated Background -->
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">INIT</a></li>
+            <li><a href="#skills">CODE</a></li>
+            <li><a href="#experience">WORK</a></li>
+            <li><a href="#research">RESEARCH</a></li>
+            <li><a href="#contact">CONNECT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="hero-text">
+                    <h1 class="glitch" data-text="YASH INDULKAR">YASH INDULKAR</h1>
+                    <p class="subtitle">AI RESEARCHER & DATA ARCHITECT</p>
+                    <p class="tagline">Building the future with intelligent systems and data-driven solutions</p>
+                    <div class="cta-buttons">
+                        <a href="#research" class="btn">
+                            <i class="fas fa-microscope"></i> VIEW RESEARCH
+                        </a>
+                        <a href="mailto:yashindulkar31@gmail.com" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> INITIATE CONTACT
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <div class="terminal-dot dot-red"></div>
+                            <div class="terminal-dot dot-yellow"></div>
+                            <div class="terminal-dot dot-green"></div>
+                        </div>
+                        <div class="terminal-title">yash@matrix:~$</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">$ whoami</div>
+                        <div class="terminal-line">MS Data Science - TUHH Hamburg</div>
+                        <div class="terminal-line">$ cat experience.txt</div>
+                        <div class="terminal-line">Ex-ICICI Prudential Manager</div>
+                        <div class="terminal-line">$ ls research/</div>
+                        <div class="terminal-line">8+ Published Papers</div>
+                        <div class="terminal-line">$ echo $STATUS</div>
+                        <div class="terminal-line">AI Enthusiast & Digital Architect</div>
+                        <div class="terminal-line"><span class="cursor-blink">█</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="glitch" data-text="TECHNICAL ARSENAL">TECHNICAL ARSENAL</h2>
+                <p>Advanced technologies and frameworks mastered through years of development and research</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Angular</li>
+                    </ul>
+                </div>
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>Go</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>Swift</li>
+                    </ul>
+                </div>
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frameworks</h3>
+                    <ul class="skill-list">
+                        <li>iOS Development</li>
+                        <li>Node.js</li>
+                        <li>Flask</li>
+                        <li>Django</li>
+                        <li>Spring Boot</li>
+                    </ul>
+                </div>
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Storage</h3>
+                    <ul class="skill-list">
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <ul class="skill-list">
+                        <li>AWS</li>
+                        <li>Apache Kafka</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="glitch" data-text="MISSION HISTORY">MISSION HISTORY</h2>
+                <p>Professional evolution through strategic roles and technical leadership</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-date">April 2023 - September 2024</div>
+                        <div class="timeline-title">Manager I</div>
+                        <div class="timeline-company">ICICI Prudential Life Insurance Company Limited</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-date">April 2022 - April 2023</div>
+                        <div class="timeline-title">Senior Associate</div>
+                        <div class="timeline-company">ICICI Prudential Life Insurance Company Limited</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-date">October 2020 - April 2022</div>
+                        <div class="timeline-title">Associate</div>
+                        <div class="timeline-company">ICICI Prudential Life Insurance Company Limited</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-date">September 2018 - May 2020</div>
+                        <div class="timeline-title">Data Entry Specialist</div>
+                        <div class="timeline-company">SDF Chains</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="glitch" data-text="RESEARCH MATRIX">RESEARCH MATRIX</h2>
+                <p>Advancing AI and machine learning through cutting-edge research and publications</p>
+            </div>
+            <div class="research-grid">
+                <div class="research-paper fade-in">
+                    <div class="research-status manuscript">IN PROGRESS</div>
+                    <h3>Image Generation and Conversion to Super Resolution using Deep Convolutional GAN and Super Resolution GAN</h3>
+                    <div class="research-year">2025</div>
+                </div>
+                
+                <div class="research-paper fade-in">
+                    <div class="research-status">PUBLISHED</div>
+                    <h3>Comparative Study of Machine Learning Algorithms for Twitter Sentiment Analysis</h3>
+                    <div class="research-year">2021</div>
+                </div>
+
+                <div class="research-paper fade-in">
+                    <div class="research-status">PUBLISHED</div>
+                    <h3>Time Series Analysis of Cryptocurrencies Using Deep Learning & Fbprophet</h3>
+                    <div class="research-year">2021</div>
+                </div>
+
+                <div class="research-paper fade-in">
+                    <div class="research-status">PUBLISHED</div>
+                    <h3>Alleviation of COVID by means of Social Distancing & Face Mask Detection Using YOLO V4</h3>
+                    <div class="research-year">2021</div>
+                </div>
+
+                <div class="research-paper fade-in">
+                    <div class="research-status">PUBLISHED</div>
+                    <h3>PUBG Winner Ranking Prediction using R Interface 'h2o' Scalable Machine Learning Platform</h3>
+                    <div class="research-year">2021</div>
+                </div>
+
+                <div class="research-paper fade-in">
+                    <div class="research-status">PUBLISHED</div>
+                    <h3>Comparative Study for Neural Image Caption Generation Using Different Transfer Learning Along with Diverse Beam Search & Bi-Directional RNN</h3>
+                    <div class="research-year">2021</div>
+                </div>
+
+                <div class="research-paper fade-in">
+                    <div class="research-status">PUBLISHED</div>
+                    <h3>Effects of Uber and Ola on SVM and Naïve Bayes</h3>
+                    <div class="research-year">2021</div>
+                </div>
+
+                <div class="research-paper fade-in">
+                    <div class="research-status">PUBLISHED</div>
+                    <h3>Twitter Sentimental Analysis & Algorithm Comparison for Uber & Ola Using 'R'</h3>
+                    <div class="research-year">2020</div>
+                </div>
+
+                <div class="research-paper fade-in">
+                    <div class="research-status">PUBLISHED</div>
+                    <h3>Sentiment Analysis of Uber & Ola using Deep Learning</h3>
+                    <div class="research-year">2020</div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="https://scholar.google.com/citations?user=Ww_dRHQAAAAJ&hl=en" target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-graduation-cap"></i> ACCESS SCHOLAR PROFILE
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="glitch" data-text="ESTABLISH CONNECTION">ESTABLISH CONNECTION</h2>
+                <p>Ready to collaborate on groundbreaking projects and innovative solutions</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>INITIATE PROTOCOL</h3>
+                    <div class="contact-methods">
+                        <a href="mailto:yashindulkar31@gmail.com" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600; color: var(--text-primary);">Primary Channel</div>
+                                <div>yashindulkar31@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="https://medium.com/@yashindulkar" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-medium"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600; color: var(--text-primary);">Data Stream</div>
+                                <div>medium.yashindulkar</div>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/yashindulkar" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600; color: var(--text-primary);">Professional Network</div>
+                                <div>Connect & Collaborate</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="social-links fade-in">
+                    <a href="https://github.com/yashindulkar" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com/yashindulkar" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/yashindulkar" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yashindulkar" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> YASH INDULKAR - DIGITAL ARCHITECT</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">CRAFTED WITH PRECISION & PASSION</p>
+        </div>
+    </footer>
+
+    <script>
+        // Matrix Rain Effect
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
+        const lettersArray = letters.split('');
+
+        const fontSize = 10;
+        const columns = canvas.width / fontSize;
+
+        const drops = [];
+        for (let x = 0; x < columns; x++) {
+            drops[x] = 1;
+        }
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#00ff88';
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = lettersArray[Math.floor(Math.random() * lettersArray.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(drawMatrix, 35);
+
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Smart navigation behavior
+        let lastScrollTop = 0;
+        let scrollTimeout;
+
+        function handleNavigation() {
+            const nav = document.querySelector('nav');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Add scrolled class when scrolling
+            if (scrollTop > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            // Clear timeout and set new one
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                // When scrolling stops, make nav more visible
+                if (scrollTop > 100) {
+                    nav.style.opacity = '0.6';
+                }
+            }, 150);
+
+            lastScrollTop = scrollTop;
+        }
+
+        window.addEventListener('scroll', () => throttle(handleNavigation, 10));
+
+        // Active navigation highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        function updateActiveNav() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+
+        // Ensure smooth scrolling to sections
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const offsetTop = target.offsetTop - 100; // Account for fixed nav
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Resize matrix canvas
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Terminal typing effect
+        function typeTerminalContent() {
+            const lines = document.querySelectorAll('.terminal-line');
+            lines.forEach((line, index) => {
+                if (index < lines.length - 1) { // Don't animate the cursor line
+                    const text = line.textContent;
+                    line.textContent = '';
+                    let i = 0;
+                    
+                    setTimeout(() => {
+                        const typeInterval = setInterval(() => {
+                            if (i < text.length) {
+                                line.textContent += text.charAt(i);
+                                i++;
+                            } else {
+                                clearInterval(typeInterval);
+                            }
+                        }, 50);
+                    }, index * 300);
+                }
+            });
+        }
+
+        // Start terminal typing after page load
+        setTimeout(typeTerminalContent, 1000);
+
+        // Add glitch effect to titles on scroll
+        const glitchElements = document.querySelectorAll('.glitch');
+        
+        const glitchObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'none';
+                    setTimeout(() => {
+                        entry.target.style.animation = '';
+                    }, 100);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        glitchElements.forEach(el => {
+            glitchObserver.observe(el);
+        });
+
+        // Performance optimization
+        let ticking = false;
+        function throttle(func, delay) {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    func();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }
+
+        window.removeEventListener('scroll', updateActiveNav);
+        window.addEventListener('scroll', () => {
+            throttle(updateActiveNav, 10);
+            throttle(handleNavigation, 10);
+        });
+    </script>
+</body>
 </html>
